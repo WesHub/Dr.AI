@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2c3e50" />
+                            <stop offset="100%" stop-color="#4ca1af" />
+                        </linearGradient>
+                    </defs>
+                    <text x="50%" y="50%" class="logo-text" text-anchor="middle" dominant-baseline="middle">
+                        <tspan class="logo-dr">Dr</tspan>
+                        <tspan class="logo-dot">.</tspan>
+                        <tspan class="logo-ai">AI</tspan>
+                    </text>
+                    <path class="logo-line" d="M20 65 C60 75, 80 30, 180 65" stroke="url(#gradient)" stroke-width="2" fill="none" />
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animated">Welcome to Dr.AI</h1>
+                <p class="animated">Your personal healthcare companion, powered by AI.</p>
+                <a href="#info-section" class="btn animated">Learn More</a>
+            </div>
+        </section>
+
+        <section id="info-section" class="info-section">
+            <div class="info-container">
+                <div class="info-content animated">
+                    <h2>What is Dr.AI?</h2>
+                    <p>Dr.AI is an advanced healthcare recommendation system that utilizes cutting-edge artificial intelligence technology to provide personalized medical advice and diagnosis suggestions based on your symptoms.</p>
+                    <p>By fine-tuning OpenAI GPT 3.5-turbo model on a vast dataset of medical information, Dr.AI can understand and interpret your symptoms, then recommend the most appropriate course of action, whether it's seeking a particular specialist or considering potential illnesses.</p>
+                </div>
+                <div class="info-image animated">
+                    <img src="https://images.axios.com/rseGAk89vuIlIcOMwtFzdPfRUzI=/117x0:1197x1080/1600x1600/2023/01/17/1673986436931.jpg" alt="Healthcare Icon">
+                </div>
+            </div>
+        </section>
+
+        <section id="chat-section" class="chat-section">
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-input">
+                <input type="text" id="symptomInput" placeholder="Enter your symptoms..." class="animated">
+                <button id="sendButton" class="animated">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dr.AI. All rights reserved.</p>
+    </footer>
+
+    <script src="chat.js"></script>
+    <script src="nav.js"></script>
+    <script src="animations.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+</body>
+</html>
